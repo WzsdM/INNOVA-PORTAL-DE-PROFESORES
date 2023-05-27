@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Panda Particular Professor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/3297378b0c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static '/styles/menu.css' %}"/>
+    </head>
+    <body>
+        <nav class="menu">
+            <a href="#"><div class="navgap User">
+                <i class="fa-solid fa-user"></i>
+                <label>Mi Usuario</label>
+            </div></a>
+            <a href="#"><div class="navgap Class">
+                <i class="fa-solid fa-shapes"></i>
+                <label>Clases</label>
+            </div></a>
+            <a href="#"><div class="navgap Dashboard">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <label>Tablero</label>
+            </div></a>
+            <a href="#"><div class="navgap ClipBoard">
+                <i class="fa-solid fa-clapperboard"></i>
+                <label>Grabaciones</label>
+            </div></a>
+            <a href="#"><div class="navgap Exit">
+                <i class="fa-solid fa-door-open"></i>
+                <label>Salir</label>
+            </div></a>
+        </nav>
+        <div id="content">
+        {% block contenido %} {% endblock contenido %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none!important;
+}
+a:link, :visited, :active{
+    color: #fff;
+}
+.menu{
+    background: black;
+    color: white!important;
+    width: 7.5vw;
+    height: 90vh;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    place-self: middle;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+}
+.navgap{
+    display: inline-grid;
+}
+.navgap i{
+    font-size: 5vh;
+}
+.menu a:hover{
+    color: yellow;
+}
+.menu a:hover i{
+    transition: ease-in;
+    transition-duration: 0.3s;
+    font-size: 4.8vh;
+}
+.menu a:hover label{
+    transition: ease-out;
+    transition-duration: 0.3s;
+    font-size: 2.6vh;
+}
+#content{
+    width: 85vw;
+    height: 100vh;
+}
