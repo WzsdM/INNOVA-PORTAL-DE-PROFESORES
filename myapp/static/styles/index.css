@@ -1,0 +1,127 @@
+body{
+    justify-content: space-around;
+    align-items: center;
+    background: #e4e4e4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none!important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #141c24;
+}
+.upNav{
+    z-index: 99;
+    background-color: #e4e4e4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    position: fixed;
+}
+.logo{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.logo img{
+    height: 8vh;
+    margin-right: 1vw;
+}
+.imagen{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+.imagen img{
+    margin-top: 4vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    bottom: 20vh;
+    box-shadow: -1px 2px 111px 15px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: -1px 2px 111px 15px rgba(0,0,0,1) inset;
+    -moz-box-shadow: -1px 2px 111px 15px rgba(0,0,0,1) inset;
+}
+.login a{
+    background: #f4cc04;
+    box-sizing: border-box;
+    padding: 1.5vh;
+    border-radius: 0.5vh;
+    color: #141c24;
+}
+.listNav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+.listNav li {
+    width: 33.33%;
+    height: 100%;
+}
+.active{
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background: #f4cc04!important;
+    color: #141c24!important;
+}
+.listNav li a{
+    font-size: 1.5em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #141c24;
+    color: #e4e4e4;
+    width: 100%;
+    height: 100%;
+}
+.secciones{
+    box-sizing: border-box;
+    padding: 10vh;
+}
+.secciones article h1{
+    font-size: 3em;
+    margin-bottom: 3vh;
+}
+.secciones article p{
+    font-size: 1.5em;
+}
+.secciones article ul {
+    font-size: 1.5em;
+}
+.footerIndex{
+    width: 100%;
+    height: 30vh;
+    background: #141c24;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #f4cc04 #141c24;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #141c24;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f4cc04;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }

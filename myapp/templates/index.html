@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,13 +7,52 @@
         <title>Panda Particular Professor</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="{% static 'styles/index.css'%}">
+        <link rel="icon" type="image/png" href="{% static 'images/PandaLogo.png'%}"> 
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script src="{% static 'scripts/index.js'%}"></script>
     </head>
     <body>
         
-        <h1>Panda Particular</h1>
-        <p>lorem ipsum di amet </p>
-        
-        <script src="" async defer></script>
+        <nav class="upNav">
+            <div class="logo">
+                <img src="{% static 'images/PandaLogo.png'%}"/>
+                <h1>Panda Private Proffesor</h1>
+            </div>
+            <div class="login"><a href="{% url 'login' %}">Iniciar Sesión</a></div>
+        </nav>
+        <div class="imagen"><img src="{% static 'images/VirtualClass.jpg'%}"/></div>
+        <div class="infoNav">
+            <ul class="listNav">
+                <li><a href="#caracteristicas" class="active">Características</a></li>
+                <li><a href="#mision" class="Misión">Misión</a></li>
+                <li><a href="#vision" class="Visión">Visión</a></li>
+            </ul>
+            <div class="secciones">
+                <article id="caracteristicas">
+                    <h1>Características</h1>
+                    <ul>
+                        <li>Facilidad al momento de manejar la plataforma.</li>
+                        <li>Comodidad al brindar todas las herramientas necesarias para la educación a distancia.</li>
+                        <li>Accesibilidad con herramientas de Google.</li>
+                        <li>Diversidad de opciones y clases.</li>
+                        <li>Compresión y Desarrollo hacia el alumno.</li>
+                        <li>Visualizar experiencia, costos, y más detalles para elegir la clase adecuada.</li>
+                    </ul>
+                </article>
+                <article id="mision">
+                    <h1>Misión</h1>
+                    <p>Ayudar a los alumnos de secundaria a encontrar profesores particulares de manera sencilla, facilitando el uso y comunicación a nivel de educación con los profesores.</p>
+                </article>
+                <article id="vision">
+                    <h1>Visión</h1>
+                    <p>Ser la mejor plataforma de educación secundaria a nivel nacional.</p>
+                </article>
+            </div>
+        </div>
+        <footer class="footerIndex">
+
+        </footer>
+
     </body>
 </html>

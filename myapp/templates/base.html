@@ -12,23 +12,23 @@
     </head>
     <body>
         <nav class="menu">
-            <a href="#"><div class="navgap User">
+            <a href="{% url 'user' %}"><div class="navgap User">
                 <i class="fa-solid fa-user"></i>
                 <label>Mi Usuario</label>
             </div></a>
-            <a href="#"><div class="navgap Class">
+            <a href="{% url 'classboard' %}"><div class="navgap Class">
                 <i class="fa-solid fa-shapes"></i>
                 <label>Clases</label>
             </div></a>
-            <a href="#"><div class="navgap Dashboard">
+            <a href="{% url 'dashboard' %}"><div class="navgap Dashboard">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <label>Tablero</label>
             </div></a>
-            <a href="#"><div class="navgap ClipBoard">
+            <a href="{% url 'recordings' %}"><div class="navgap ClipBoard">
                 <i class="fa-solid fa-clapperboard"></i>
                 <label>Grabaciones</label>
             </div></a>
-            <a href="#"><div class="navgap Exit">
+            <a href="{% url 'index' %}"><div class="navgap Exit">
                 <i class="fa-solid fa-door-open"></i>
                 <label>Salir</label>
             </div></a>

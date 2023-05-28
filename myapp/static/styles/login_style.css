@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none!important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #141c24;
+}
+header{
+    font-size: 2em;
+}
+.iniciobtn{
+    position: absolute;
+    background: #bcdc3c;
+    box-sizing: border-box;
+    padding: 1.5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border-radius: 0.5vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    color: #141c24;
+}
+.wrapper{
+    background: #e4e4e4;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    color: #171A20;
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #e4e4e4;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image{
+    background-image: url("../images/LoginPan.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+img{
+    width: 5em;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color: #e4e4e4;
+    font-size: 18px;
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #141c24;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #bcdc3c;
+}
+.input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #f4cc04;
+}
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #bcdc3c;
+    border-radius: 5px;
+}
+.submit:hover,.iniciobtn:hover{
+    background:#f4cc04;
+    color: #e4e4e4;
+    transition: .4s;
+}
+.link:hover{
+    color:#f4cc04;
+}
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #141c24;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #141c24;
+}
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+    }
+    img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 10%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #f4cc04 #141c24;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #141c24;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f4cc04;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
